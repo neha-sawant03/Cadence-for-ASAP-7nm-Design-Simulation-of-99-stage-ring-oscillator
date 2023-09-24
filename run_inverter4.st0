@@ -1,0 +1,61 @@
+****** HSPICE -- R-2020.12-3 linux64 (Mar 07 2021 6917263) ******
+Input File: run_inverter4.sp
+lic:
+lic: FLEXlm: SDK_12.9
+lic: USER:   sawan050             HOSTNAME: ece-chur
+lic: HOSTID: 089204dbf66b         PID:      54799
+lic: Using FLEXlm license file:
+lic: 27020@synopsys.ece.umn.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 19-dec-2024/2023.03
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@synopsys.ece.umn.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 1.43E-01
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/ad
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/behave
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/bjt
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/burr_brn
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/comlinear
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/dio
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/fet
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/lin_tech
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/pci
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/signet
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/ti
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/tline
+       option search = /home/apps/common/hspice/2020.12/hspice/R-2020.12-3/hspice/parts/xilinx
+       option ingold =     2.00
+       option artist =     2.00
+       option psf =     2.00
+       option measout =     1.00
+       option parhier = local
+       option probe =     0.00
+       option march =     2.00
+       option accuracy =     1.00
+       option post
+       option runlvl =     5.00
+ init: end read circuit files, cpu clock= 1.50E-01 peak memory=     468 mb
+ init: begin check errors, cpu clock= 1.50E-01
+ init: end check errors, cpu clock= 1.75E-01 peak memory=     468 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.75E-01
+       establish matrix -- done, cpu clock= 1.75E-01 peak memory=     468 mb
+       re-order matrix -- done, cpu clock= 1.75E-01 peak memory=     468 mb
+ init: end setup matrix, cpu clock= 1.75E-01 peak memory=     468 mb
+ dcop: begin dcop, cpu clock= 1.75E-01
+ dcop: end dcop, cpu clock= 1.90E-01 peak memory=     468 mb tot_iter=       2
+ output: run_inverter4.tr0
+ sweep: tran tran0    begin, stop_t=  3.00E-10 #sweeps=3001 cpu clock= 1.91E-01
+ tran: time= 3.2496E-11 tot_iter=     100 conv_iter=      41 cpu clock= 1.96E-01
+ tran: time= 6.0000E-11 tot_iter=     106 conv_iter=      44 cpu clock= 1.96E-01
+ tran: time= 9.2170E-11 tot_iter=     205 conv_iter=      85 cpu clock= 2.01E-01
+ tran: time= 1.2000E-10 tot_iter=     279 conv_iter=     115 cpu clock= 2.04E-01
+ tran: time= 1.5254E-10 tot_iter=     319 conv_iter=     133 cpu clock= 2.06E-01
+ tran: time= 1.8108E-10 tot_iter=     404 conv_iter=     168 cpu clock= 2.09E-01
+ tran: time= 2.1000E-10 tot_iter=     412 conv_iter=     172 cpu clock= 2.10E-01
+ tran: time= 2.5052E-10 tot_iter=     521 conv_iter=     217 cpu clock= 2.14E-01
+ tran: time= 2.7000E-10 tot_iter=     582 conv_iter=     241 cpu clock= 2.16E-01
+ tran: time= 3.0000E-10 tot_iter=     626 conv_iter=     260 cpu clock= 2.18E-01
+ sweep: tran tran0    end, cpu clock= 2.18E-01 peak memory=     468 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='R-2020.12-3 linux64' PARAM_COUNT=0
+.TITLE '** run inverter file'
+ period           frequency        iavg             power           
+ temper           alter#          
+  7.893e-10        1.267e+09       -1.325e-04       -8.347e-05      
+  1.100e+02       1               
